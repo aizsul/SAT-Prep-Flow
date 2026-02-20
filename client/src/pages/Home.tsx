@@ -30,7 +30,7 @@ export default function Home() {
     });
     dispatch({ type: 'START_VERBAL' });
     
-    setLocation("/test");
+    setLocation("/Instructions");
   };
 
   return (
