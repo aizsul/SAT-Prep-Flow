@@ -183,7 +183,7 @@ export const SAMPLE_QUESTIONS: {
       ],
       correctChoiceId: "A",
       domain: "Command of Evidence: Quantitative",
-      imageUrl: "/client/publuic/questions/v1-q11-graph.png"
+      imageUrl: "/client/public/questions/v1-q11-graph.png"
     },
     {
       id: "v1-q12",
