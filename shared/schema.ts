@@ -38,6 +38,7 @@ export interface Question {
   stage: 1 | 2;
   module2Type?: 'easy' | 'hard';
   text: string;
+  imageUrl?: string;
   choices: {
     id: string;
     text: string;

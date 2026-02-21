@@ -186,7 +186,10 @@ export default function TestPage() {
       <main className="flex-1 overflow-auto p-8">
         {currentQuestion && (
           <div className="max-w-2xl mx-auto">
-            <p className="text-lg mb-8">{currentQuestion.text}</p>
+            <p 
+  className="text-lg text-gray-800 whitespace-pre-wrap" 
+  dangerouslySetInnerHTML={{ __html: currentQuestion.text }} 
+/>
             <div className="space-y-4">
               {currentQuestion.choices.map((choice: { id: string, text: string }) => (
                 <Button 
