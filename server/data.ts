@@ -45,7 +45,7 @@ export const SAMPLE_QUESTIONS: {
       domain: "Words in Context"
     },
     {
-      id: "v1-q2",
+      id: "v1-q2",  
       section: "verbal",
       stage: 1,
       text: "The following text is adapted from Alice Dunbar Nelson's 1899 short story <i>The Fisherman of Pass Christian</i>. Pass Christian is a city in the US state of Mississippi.\n\nThe swift breezes on the beach at Pass Christian meet and conflict as though each strove for the mastery of the air. The land-breeze blows down through the pines, resinous, fragrant, cold, bringing breath-like memories of dim, dark woods shaded by myriad pine-needles. The breeze from the Gulf is warm and soft and languorous, blowing up from the south with its suggestion of tropical warmth. \n\nAs used in the text, what does the word 'mastery' most nearly mean?",
@@ -2190,3 +2190,4 @@ export const SAMPLE_QUESTIONS: {
       domain: "Synthesizing Information"
     }
   ],}
+  
