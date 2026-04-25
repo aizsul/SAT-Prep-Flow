@@ -20,11 +20,14 @@ Preferred communication style: Simple, everyday language.
 
 ## Backend (Express API)
 - **Framework**: Express 5 running on Node.js with TypeScript (executed via tsx)
-- **API Routes**: Simple REST endpoints mounted under `/api/`:
-  - `GET /api/questions` — returns static question sets (module1, module2Easy, module2Hard)
+- **API Routes**: REST endpoints mounted under `/api/`:
+  - `GET /api/questions` — returns question sets grouped by module (verbal_mod1, verbal_mod2_easy/hard, math_mod1, math_mod2_easy/hard) read from the database
   - `POST /api/results` — validates and stores test results
   - `GET /api/results` — retrieves all stored results
-- **Question Data**: Currently hardcoded in `server/data.ts` as static JSON (not in database), organized by module and difficulty track
+  - `GET/POST/PATCH/DELETE /api/admin/questions` — full CRUD for managing questions from the admin UI
+  - `POST /api/admin/upload` — multipart image upload (multer) saved to `uploads/` and returned as `/uploads/<filename>`
+- **Static uploads**: `uploads/` directory served at `/uploads/*` for question images
+- **Question Data**: Stored in the `questions` table. On first boot, if the table is empty, it is seeded from `server/data.ts`. Subsequent edits go through the admin UI
 - **Validation**: Zod schemas (generated via drizzle-zod) for input validation on API endpoints
 - **Dev Server**: Vite dev server integrated as middleware with HMR support during development
 - **Production**: Client is built to `dist/public`, server is bundled with esbuild to `dist/index.cjs`

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from "wouter";
+import { Link, useLocation } from "wouter";
 import { useTest } from "@/lib/test-context";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -132,6 +132,14 @@ export default function Home() {
             <p className="text-center text-xs text-gray-400 mt-8">
               Made by the Ministry of Education
               <br />This is a practice environment.
+              <br />
+              <Link
+                href="/admin"
+                className="text-gray-400 hover:text-blue-600 underline"
+                data-testid="link-admin"
+              >
+                Question admin
+              </Link>
             </p>
           </motion.div>
         </div>
