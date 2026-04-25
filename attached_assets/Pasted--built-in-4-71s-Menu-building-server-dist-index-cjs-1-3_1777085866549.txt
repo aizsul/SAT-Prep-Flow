@@ -1,0 +1,96 @@
+ built in 4.71s
+Menu
+building server...
+  dist/index.cjs  1.3mb ⚠️
+⚡ Done in 352ms
+==> Uploading build...
+==> Uploaded in 4.3s. Compression took 3.3s
+==> Build successful 🎉
+==> Deploying...
+==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+==> Running 'npm run start'
+> rest-express@1.0.0 start
+> NODE_ENV=production node dist/index.cjs
+[seed] Failed to seed questions: error: relation "questions" does not exist
+    at /opt/render/project/src/dist/index.cjs:68:13326
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /opt/render/project/src/dist/index.cjs:76:31349
+    at async Jf.countQuestions (/opt/render/project/src/dist/index.cjs:76:101726)
+    at async JS (/opt/render/project/src/dist/index.cjs:187:28088)
+    at async i8 (/opt/render/project/src/dist/index.cjs:187:29058)
+    at async /opt/render/project/src/dist/index.cjs:187:33159 {
+  length: 109,
+  severity: 'ERROR',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '121',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1449',
+  routine: 'parserOpenTable'
+}
+serving on port 10000
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+==> 
+==> Available at your primary URL https://sat-mock-nis-alash.onrender.com
+==> 
+==> ///////////////////////////////////////////////////////////
+[admin] list failed: error: relation "questions" does not exist
+    at /opt/render/project/src/dist/index.cjs:68:13326
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /opt/render/project/src/dist/index.cjs:76:31349
+    at async Jf.listQuestions (/opt/render/project/src/dist/index.cjs:76:101261)
+    at async /opt/render/project/src/dist/index.cjs:187:29880 {
+  length: 109,
+  severity: 'ERROR',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '121',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1449',
+  routine: 'parserOpenTable'
+}
+2:50:42 AM [express] GET /api/admin/questions 500 in 453ms :: {"message":"Failed to list questions"}
+[admin] list failed: error: relation "questions" does not exist
+    at /opt/render/project/src/dist/index.cjs:68:13326
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /opt/render/project/src/dist/index.cjs:76:31349
+    at async Jf.listQuestions (/opt/render/project/src/dist/index.cjs:76:101261)
+    at async /opt/render/project/src/dist/index.cjs:187:29880 {
+  length: 109,
+  severity: 'ERROR',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '121',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1449',
+  routine: 'parserOpenTable'
+}
